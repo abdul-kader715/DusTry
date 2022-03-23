@@ -5324,7 +5324,7 @@ img {
 
 .wpo-project-area .project-slider .project-itam {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   margin: 0 10px 50px 0;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
