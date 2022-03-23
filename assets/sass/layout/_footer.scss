@@ -31,7 +31,8 @@
 
     li {
         color: $white;
-        i{   
+
+        i {
             padding-right: 15px;
         }
     }
@@ -41,7 +42,7 @@
     }
 
     .wpo-upper-footer {
-        padding: 70px 0;
+        padding: 140px 0 107px;
     }
 
     @media (max-width: 991px) {
@@ -77,6 +78,22 @@
     .f-item-bg {
         background: $dark-gray;
         padding: 60px 75px;
+
+        @media (max-width:1199px) {
+            padding: 50px 5px;
+        }
+
+        @media (max-width:991px) {
+            padding: 50px 40px;
+        }
+
+        @media (max-width:767px) {
+            padding: 60px 75px;
+        }
+
+        @media (max-width:355px) {
+            padding: 60px 65px;
+        }
     }
 
     .widget-title {
@@ -100,7 +117,12 @@
             color: $white;
             margin: 0;
             position: relative;
-            &::before{
+
+            @media (max-width:355px) {
+                font-size: 18px;
+            }
+
+            &::before {
                 position: absolute;
                 content: '';
                 left: 0;
@@ -109,6 +131,14 @@
                 height: 2px;
                 background: $white;
                 z-index: 1;
+
+                @media (max-width:767px) {
+                    top: 35px;
+                }
+
+                @media (max-width:355px) {
+                    top: 30px;
+                }
             }
         }
 
@@ -118,14 +148,22 @@
         background: $theme-primary-color;
         padding: 60px 50px;
 
+        @media (max-width:1199px) {
+            padding: 50px 32px;
+        }
+
+        @media (max-width:991px) {
+            padding: 60px 50px;
+        }
+
         .logo {
-            max-width: 400px; 
+            max-width: 400px;
         }
     }
 
     .about-widget {
-        .f-from{
-            .f-from-name{
+        .f-from {
+            .f-from-name {
                 height: 58px;
                 width: 100%;
                 padding: 20px;
@@ -137,14 +175,17 @@
                 margin-bottom: 10px;
                 border: 1px solid $f-from-boeder;
                 border-radius: 5px;
+
                 &::placeholder {
                     color: $border-color;
-                  }
+                }
+
                 &:focus-visible {
                     outline: none;
                 }
             }
-            .submit{
+
+            .submit {
                 padding: 20px;
                 font-size: 16px;
                 font-weight: 600;
@@ -153,8 +194,13 @@
                 border: none;
                 border-radius: 5px;
                 margin-top: 15px;
+
+                @media (max-width:767px) {
+                    padding: 15px 25px;
+                }
             }
         }
+
         p {
             margin-bottom: 0.8em;
             line-height: 1.9em;
@@ -165,17 +211,13 @@
         }
     }
 
-    .wpo-service-link-widget {
-        
-    }
+
 
     .link-widget {
         overflow: hidden;
 
 
-        @media screen and (min-width: 1200px) {
-            
-        }
+        @media screen and (min-width: 1200px) {}
 
         @media (max-width: 1199px) {
             padding-left: 20px;
@@ -187,6 +229,7 @@
 
         @media (max-width: 767px) {
             max-width: 350px;
+            margin-bottom: 60px;
         }
 
         ul {
