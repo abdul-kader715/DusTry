@@ -290,7 +290,7 @@
 		.post .details .date {
 			font-size: 13px;
 			font-size: calc-rem-value(13);
-			color: $text-color;
+			color: $black;
 
 			i {
 				display: inline-block;
@@ -390,6 +390,9 @@
 			&::before{
 				left: 28px;
 				background: url(../images/Single-title-shape2.png) no-repeat right center;
+			}
+			@media(max-width:767px){
+				font-size: 32px;
 			}
 		}
 	

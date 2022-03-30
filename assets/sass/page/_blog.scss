@@ -3,6 +3,7 @@
 15. wpo-blog-pg-section
 --------------------------------------------------------------*/
 .wpo-blog-pg-section {
+	background: $white;
 	.wpo-blog-content {
 
 		.post {
@@ -135,7 +136,7 @@
 		}
 
 		a.read-more{
-			color: $text-color;
+			color: $dark-gray;
 			text-transform: capitalize;
 			font-size: 16px;
 

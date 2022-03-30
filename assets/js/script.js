@@ -112,6 +112,41 @@
         $('.payment-name').removeClass('active')
     });
 
+        // Hero slider background setting
+        function sliderBgSetting() {
+            if ($(".hero-slider .slide").length) {
+                $(".hero-slider .slide").each(function() {
+                    var $this = $(this);
+                    var img = $this.find(".slider-bg").attr("src");
+    
+                    $this.css({
+                        backgroundImage: "url("+ img +")",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center center"
+                    })
+                });
+            }
+        }
+    
+    
+        //Setting hero slider
+        function heroSlider() {
+            if ($(".hero-slider").length) {
+                $(".hero-slider").slick({
+                    // autoplay: true,
+                    autoplaySpeed: 6000,
+                    pauseOnHover: true,
+                    arrows: true,
+                    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                    nextArrow: '<button type="button" class="slick-next">Next</button>',
+                    dots: false,
+                    fade: true,
+                    cssEase: 'linear'
+                });
+            }
+        }
+     
+    
     
     // tooltips
 
@@ -225,7 +260,8 @@
             $('.preloader').delay(100).fadeOut(500, function() {
 
                 //active wow
-                wow.init();
+                wow.init(); 
+                heroSlider();
 
 
 

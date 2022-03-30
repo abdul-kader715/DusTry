@@ -283,7 +283,7 @@
 			 text-transform: capitalize;
 			 background: none;
 			 text-decoration: underline;
-			 color: $text-color;
+			 color: $dark-gray;
 		 }
 	 }
 	}
@@ -396,6 +396,7 @@
 			.post-control-link {
 				padding-right: 25px;
 				position: relative;
+				color: $dark-gray;
 
 				@include media-query(767px) {
 					padding-right: 0;
@@ -423,6 +424,7 @@
 			.post-control-link {
 				padding-left: 25px;
 				position: relative;
+				color: $dark-gray;
 
 				@include media-query(767px) {
 					padding-left: 0;
@@ -559,7 +561,7 @@
 			h4 span {
 				font-size: 15px;
 				font-size: calc-rem-value(15);
-				color: $text-color;
+				color: $dark-gray;
 				font-weight: normal;
 				text-transform: none;
 				display: inline-block;

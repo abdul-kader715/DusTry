@@ -1,5 +1,6 @@
 // start banner css
-.wpo-banner-area {
+.wpo-banner-area,
+.wpo-site-banner-section-s2 {
     position: relative;
     background: url(../images/banner-bg.jpg);
     background-repeat: no-repeat;
@@ -203,7 +204,8 @@
 }
 
 // start provid
-.wpo-provid-area {
+.wpo-provid-area,
+.wpo-provid-area-s2{
 
     .provid-wrap {
         display: flex;
@@ -555,7 +557,8 @@
 }
 
 // start count-up
-.wpo-countup-area {
+.wpo-countup-area,
+.wpo-countup-area-s2 {
     background: $white;
     position: relative;
     z-index: 1;

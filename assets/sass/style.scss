@@ -81,6 +81,7 @@ Version:        1.0.0
 // components
 @import "components/section-title";
 @import "components/buttons";
+@import "components/contact";
 @import "components/form";
 @import "components/social-links";
 @import "components/page-title";
@@ -99,6 +100,11 @@ Version:        1.0.0
 
 // page
 @import "page/home-default";
+@import "page/_home-style2";
+@import "page/_about";
+@import "page/_error-404";
+@import "page/_services-alt";
+@import "page/_service";
 
 
 @import "page/_blog";
