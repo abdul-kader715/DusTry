@@ -9,18 +9,7 @@
 
 
 
-	&::before {
-		content: url(../images/benner-left-ing.png);
-		position: absolute;
-		bottom: 0;
-		left: -20px;
-	}
 
-	&::after {
-		content: url(../images/benner-right-ing.png);
-		position: absolute;
-		top: 0;
-	}
 
 	.slide {
 		height: 840px;
@@ -962,5 +951,7 @@
 	to {
 		-webkit-box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
 		box-shadow: 0 0 0 45px rgba(59, 81, 125, 0.01);
+
+		
 	}
 }

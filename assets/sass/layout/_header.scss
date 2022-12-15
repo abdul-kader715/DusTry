@@ -561,6 +561,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width:991px) {
+		justify-content: end;
+	}
 
 	.header-call-icon {
 		width: 50px;
@@ -571,12 +574,18 @@
 		align-items: center;
 		justify-content: center;
 		margin-right: 15px;
-
+		@media (max-width:991px) {
+			margin-right: 0;
+		}
 		@media (max-width:575px) {
 			width: 35px;
 			height: 35px;
 			padding: 20px;
 			margin-right: 0;
+			position: relative;
+		}
+		@media (max-width:399px) {
+			right: -24px;
 		}
 
 		i {
@@ -590,7 +599,7 @@
 	}
 
 	.close-form {
-		@media (max-width:767px) {
+		@media (max-width:991px) {
 			display: none;
 		}
 
@@ -612,6 +621,10 @@
 			font-weight: 800;
 			line-height: 22px;
 			color: $dark-gray;
+			@media (max-width:1199px) {
+				font-size: 15px;
+			}
+	
 		}
 	}
 }
