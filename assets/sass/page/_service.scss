@@ -1,7 +1,7 @@
 /*=====================================================
 10. wpo-service-single
 ======================================================*/
-.wpo-service-area {
+.wpo-service-section {
     padding-bottom: 90px;
 
     @media(max-width:991px) {
@@ -113,7 +113,7 @@
             margin-bottom: 10px;
         }
 
-        .wpo-service-area {
+        .wpo-service-section {
             padding-bottom: 0;
 
             .wpo-service-item {

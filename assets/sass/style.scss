@@ -23,7 +23,7 @@ Version:        1.0.0
 	3.3 wpo-contact-section
 	3.4 wpo-service-section
 	3.5 wpo-case-section
-	3.6 wpo-testimonials-section
+	3.6 wpo-testimonial-sections-section
 	3.7 wpo-team-section
 	3.8 wpo-consultancy-section
 	3.9 wpo-blog-section
@@ -101,7 +101,7 @@ Version:        1.0.0
 // page
 @import "page/home-default";
 @import "page/_home-style2";
-@import "page/_about";
+
 @import "page/_error-404";
 @import "page/_services-alt";
 @import "page/_service";

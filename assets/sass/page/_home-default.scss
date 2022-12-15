@@ -1,182 +1,167 @@
-// start banner css
-.wpo-banner-area,
-.wpo-site-banner-section-s2 {
-    position: relative;
-    background: url(../images/banner-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 938px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    @include media-query(1399px) {
-		height: 750px;
-	}
+/* 3.2 wpo-about-section */
+.wpo-about-section {
+    background: #f6fbff;
 
-	@include media-query(991px) {
-		height: 600px;
-	}
-	@include media-query(767px) {
-		height: 550px;
-	}
-
-    &::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(270deg, #001E37 27.03%, rgba(51, 49, 44, 0) 100%);
-        opacity: 0.85;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        z-index: -1;
-    }
-
-    &::after {
-        position: absolute;
-        bottom: 0;
-        left: -65px;
-        z-index: -1;
-
-        @media (max-width:991px) {
-            display: none;
-        }
-    }
-
-    .banner-bg-right {
+    .about-left-content {
         position: relative;
 
-        &::after {
+        .image-1 {
             position: absolute;
-            top: -242px;
-            right: 40px;
-            content: url(/assets/images/banner-right-03.svg);
-            animation: bounceTop 3s linear infinite;
+            left: 0;
+            top: 50%;
+            z-index: 1;
 
-            @media (max-width:991px) {
-                display: none;
-            }
-
-        }
-
-        &::before {
-            position: absolute;
-            top: -248px;
-            right: 24px;
-            content: url(/assets/images/banner-right-04.svg);
-            animation: bounceTop 3s linear infinite;
-
-            @media (max-width:991px) {
-                display: none;
+            img {
+                width: 100%;
+                border-radius: 10px;
             }
         }
+
+        .image-2 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
     }
 
-    .banner-left {
+    .about-right {
 
-        h4 {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 24px;
-            color: $theme-primary-color;
-            margin-bottom: 17px;
+        .text {
+            padding: 74px 72px;
+
+            @media (max-width:1399px) {
+                padding: 29px 40px;
+            }
+
+            @media (max-width:1199px) {
+                padding: 20px 40px;
+            }
 
             @media (max-width:991px) {
-                font-size: 15px;
-            }
-        }
-
-        h2 {
-            font-size: 60px;
-            font-weight: 800;
-            line-height: 63px;
-            color: $white;
-            margin-bottom: 26px;
-
-            @media (max-width:991px) {
-                font-size: 45px;
+                padding: 75px 72px;
             }
 
-            @media (max-width:478px) {
-                font-size: 35px;
-                line-height: 45px;
-            }
-        }
-
-        p {
-            margin-right: 60px;
-            font-size: 17px;
-            font-weight: 600;
-            line-height: 32px;
-            color: $text-color;
-            margin-bottom: 47px;
-
-            @media (max-width:991px) {
-                font-size: 15px;
-                line-height: 25px;
-            }
-        }
-
-        .theme-btn i {
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 19px;
-            padding-left: 8px;
-        }
-    }
-
-    .banner-right {
-        position: relative;
-        padding-top: 85px;
-
-        @media (max-width:767px) {
-            padding: 0;
-        }
-
-        &::after {
-            position: absolute;
-            content: url(/assets/images/banner-right-01.svg);
-            left: 130px;
-            animation: bounceTop 3s linear infinite;
-
-            @media (max-width:767px) {
-                left: -68px;
-                top: -413px;
+            @media (max-width:525px) {
+                padding: 30px 20px;
             }
 
-            @media (max-width:480px) {
-                display: none;
-            }
-        }
-
-        &::before {
-            position: absolute;
-            content: url(/assets/images/banner-right-02.svg);
-            left: 100px;
-            animation: bounceTop 3s linear infinite;
-
-            @media (max-width:1024px) {
-                width: 60px;
+            span {
+                font-family: $base-font;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 18px;
+                color: $theme-primary-color;
             }
 
-            @media (max-width:767px) {
-                left: -80px;
-                top: -408px;
+            h2 {
+                color: $heading-color;
+                margin-top: 9px;
+                margin-bottom: 23px;
+                font-size: 40px;
+                line-height: 48px;
+                font-weight: 800;
+
+
+
+
+                @media (max-width:1399px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width:1199px) {
+                    font-size: 36px;
+                    margin-bottom: 5px;
+                    line-height: 40px;
+                }
+
+                @media (max-width:991px) {
+                    margin-bottom: 23px;
+                    font-size: 42px;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 36px;
+                    margin-bottom: 5px;
+                    line-height: 40px;
+                }
+
+                @media (max-width:525px) {
+                    font-size: 25px;
+                }
+
             }
 
-            @media (max-width:480px) {
-                display: none;
+            p {
+                font-family: $base-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                color: $text-light-color;
+                padding-bottom: 11px;
+
+                @media (max-width:1199px) {
+                    margin-bottom: 5px;
+                    line-height: 25px;
+                    padding-bottom: 5px;
+                }
+
+                @media (max-width:991px) {
+                    font-size: 16px;
+                    line-height: 30px;
+                    padding-bottom: 11px;
+                }
+
+                @media (max-width:525px) {
+                    font-size: 15px;
+                    line-height: 25px;
+                    padding-bottom: 11px;
+                }
             }
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    padding: 10px 0;
+                    padding-left: 40px;
+                    position: relative;
+                    color: $theme-primary-color;
+                    list-style: none;
+
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        top: 10px;
+                        width: 25px;
+                        height: 25px;
+                        line-height: 25px;
+                        background: transparentize($theme-primary-color, .8);
+                        content: "\e64c";
+                        border-radius: 50%;
+                        font-family: 'themify';
+                        text-align: center;
+                        color: $theme-primary-color;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            a {
+                margin-top: 10px;
+            }
+
         }
     }
 }
 
+
 // start partner
-.wpo-partner-area {
+.wpo-partner-section {
 
     .partner-wrap {
         width: 100%;
@@ -203,8 +188,8 @@
 }
 
 // start provid
-.wpo-provid-area,
-.wpo-provid-area-s2{
+.wpo-provid-section,
+.wpo-provid-section-s2 {
 
     .provid-wrap {
         display: flex;
@@ -435,7 +420,7 @@
 }
 
 // start service
-.wpo-service-area {
+.wpo-service-section {
     .wpo-section-title {
         h2 {
             @media (max-width:365px) {
@@ -730,7 +715,7 @@
 }
 
 // start team 
-.wpo-team-area {
+.wpo-team-section {
     position: relative;
     margin-bottom: 96px;
     background: $dark-gray;
@@ -740,6 +725,7 @@
         margin-bottom: 0;
         padding-bottom: 48px;
     }
+
     @media (max-width:767px) {
         padding-bottom: 38px;
     }
@@ -749,6 +735,7 @@
         right: 0;
         top: 0;
         z-index: -1;
+
         @media (max-width:991px) {
             display: none;
         }
@@ -759,6 +746,7 @@
         left: 85px;
         top: 0;
         z-index: -1;
+
         @media (max-width:767px) {
             display: none;
         }
@@ -769,6 +757,7 @@
         left: 0;
         bottom: 0;
         z-index: -1;
+
         @media (max-width:767px) {
             display: none;
         }
@@ -895,21 +884,24 @@
 }
 
 // start cta section 
-.cta-area {
-    position:relative;
+.wpo-cta-section {
+    position: relative;
     z-index: 1;
     margin-top: -231px;
+
     @media (max-width:1024px) {
         margin-top: -160px;
     }
+
     @media (max-width:991px) {
         margin-top: 0;
-        padding-top: 90px; 
+        padding-top: 90px;
     }
+
     @media (max-width:767px) {
         padding-top: 80px;
     }
-    
+
 
     .cta-wrap {
         background: $theme-primary-color;
@@ -1009,7 +1001,7 @@
 }
 
 // start project
-.wpo-project-area {
+.wpo-project-section {
 
     .project-slider {
 
@@ -1075,6 +1067,7 @@
                         @media (max-width:1199px) {
                             font-size: 20px;
                         }
+
                         @media (max-width:991px) {
                             font-size: 15px;
                             line-height: 0;
@@ -1140,7 +1133,7 @@
 }
 
 // start testimonial 
-.wpo-testimonial {
+.wpo-testimonial-section {
     background: $theme-primary-color-s2;
     position: relative;
     z-index: 1;
@@ -1177,7 +1170,7 @@
 
 
 
-    .testimonial-text-titla {
+    .testimonial-text-title {
         margin-right: 65px;
 
         @media (max-width:991px) {
@@ -1212,10 +1205,12 @@
             @media (max-width:1399px) {
                 font-size: 35px;
             }
+
             @media (max-width:1199px) {
                 font-size: 30px;
                 line-height: 35px;
             }
+
             @media (max-width:991px) {
                 font-size: 21px;
                 line-height: 30px;
@@ -1248,9 +1243,11 @@
 
         .contact-page-btn {
             margin-top: 66px;
+
             @media (max-width:991px) {
                 margin-top: 30px;
             }
+
             @media (max-width:767px) {
                 margin-top: 50px;
             }
@@ -1477,7 +1474,7 @@
 }
 
 // start latest-blog
-.wpo-latest-blog {
+.wpo-blog-section {
     background: $white;
 
     .latest-blog {
@@ -1586,6 +1583,7 @@
                 @media (max-width:1199px) {
                     padding: 25px 10px;
                 }
+
                 @media (max-width:767px) {
                     padding: 25px 15px;
                 }
@@ -1610,6 +1608,7 @@
                         font-size: 18px;
                         line-height: 25px;
                     }
+
                     @media (max-width:767px) {
                         font-size: 16px;
                         line-height: 25px;
@@ -1632,15 +1631,18 @@
                     background: transparent;
                     color: $theme-primary-color;
                     padding: 0;
+
                     @media (max-width:1199px) {
                         font-size: 15px;
                         line-height: 25px;
                     }
-                    i{
+
+                    i {
                         @media (max-width:1199px) {
                             font-size: 15px;
-                        } 
+                        }
                     }
+
                     &:hover {
                         background: transparent;
 
