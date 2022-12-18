@@ -696,7 +696,37 @@
         });
     }
 
+    /*------------------------------------------
+           = PARTNERS SLIDER
+       -------------------------------------------*/
+       if ($(".partners-slider").length) {
+        $(".partners-slider").owlCarousel({
+            autoplay: true,
+            smartSpeed: 300,
+            margin: 30,
+            loop: true,
+            autoplayHoverPause: true,
+            dots: false,
+            arrows: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
 
+                550: {
+                    items: 3
+                },
+
+                992: {
+                    items: 4
+                },
+
+                1200: {
+                    items: 6
+                }
+            }
+        });
+    }
 
 
     /*------------------------------------------

@@ -560,7 +560,7 @@
 .header-right-contacts {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content:end;
 	@media (max-width:991px) {
 		justify-content: end;
 	}
